@@ -9,10 +9,6 @@ var CONTROLS = {
     back : false,
     rotateClockwise : false,
     rotateCounterClockwise : false
-  },
-  fire : {
-    active : false,
-    lastFireTime : 0
   }
 
 };
@@ -30,9 +26,6 @@ document.addEventListener('keydown', function(event) {
       break;
     case "ArrowRight":
       CONTROLS.ship.rotateClockwise = true;
-      break;
-    case " ":
-      CONTROLS.fire.active = true;
       break;
     default:
       break;
@@ -53,9 +46,6 @@ document.addEventListener('keyup', function(event) {
       break;
     case "ArrowRight":
       CONTROLS.ship.rotateClockwise = false;
-      break;
-    case " ":
-      CONTROLS.fire.active = false;
       break;
     default:
       break;
